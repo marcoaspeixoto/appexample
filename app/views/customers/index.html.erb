@@ -24,9 +24,9 @@
         <td><%= customer.email %></td>
         <td><%= customer.birthday %></td>
         <td><%= customer.obs %></td>
-        <td><%= link_to 'Show', customer %></td>
-        <td><%= link_to 'Edit', edit_customer_path(customer) %></td>
-        <td><%= link_to 'Destroy', customer, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Show', customer, class:"btn btn-primary" %></td>
+        <td><%= link_to 'Edit', edit_customer_path(customer), class:"btn btn-secondary" %></td>
+        <td><%= link_to 'Destroy', customer, class:"btn btn-danger", method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>
@@ -34,4 +34,4 @@
 
 <br>
 
-<%= link_to 'New Customer', new_customer_path %>
+<%= link_to 'New Customer', new_customer_path, class:"btn btn-outline-primary"  %>
